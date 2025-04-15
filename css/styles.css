@@ -1,41 +1,66 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #222;
 }
 
-header {
-  background: #1e3a8a;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav a {
-  color: white;
-  margin: 0 1rem;
+.nav-links a {
+  margin-left: 1.5rem;
   text-decoration: none;
-  font-weight: bold;
+  color: #000;
+  font-weight: 600;
 }
 
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  background: white;
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-wrap: wrap;
 }
 
-h2 {
-  color: #1e3a8a;
-}
-
-footer {
+.hero-left {
+  flex: 1;
+  min-width: 280px;
   text-align: center;
-  padding: 1rem;
-  background: #1e3a8a;
-  color: white;
-  margin-top: 1rem;
 }
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.hero-left h1 {
+  margin-bottom: 0.2rem;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: gray;
+}
+
+.icons a {
+  margin: 0 0.5rem;
+  color: #1e3a8a;
+  font-size: 1.3rem;
+}
+
+.hero-right {
+  flex: 2;
+  min-width: 300px;
+  padding: 1rem 2rem;
+}
+
